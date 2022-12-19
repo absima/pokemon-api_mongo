@@ -5,7 +5,7 @@ import express from 'express';
 import cors from 'cors';
 
 const PORT = 5000;
-const MONGO_URI = process.env.MONGODB_URI;
+const MONGO_URI = process.env.MONGODB_URI || PORT;
 const app = express();
 
 app.use(cors());
